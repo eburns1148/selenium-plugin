@@ -178,7 +178,7 @@ public class PluginImpl extends Plugin implements Action, Serializable, Describa
         Level logLevel = Level.parse(getHubLogLevel());
         this.listener.getLogger().println("Starting Selenium Grid");
 
-        List<String> args = new ArrayList<>();
+        List<String> args = new ArrayList<String>();
         if (getNewSessionWaitTimeout() != null && getNewSessionWaitTimeout() >= 0) {
             args.add("-newSessionWaitTimeout");
             args.add(getNewSessionWaitTimeout().toString());
